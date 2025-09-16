@@ -6,7 +6,7 @@ How to use this tool using 2 different methods to output your best buff targets 
 
    Example:
 
-   <img width="701" height="208" alt="image" src="https://github.com/user-attachments/assets/91ae721d-5d4f-4cc3-894a-815378446399" />
+   <img width="701" height="208" alt="91ae721d-5d4f-4cc3-894a-815378446399" src="https://github.com/user-attachments/assets/24d1960a-69dd-417e-a25b-ee619b06e4d3" />
 
 2. Complete the WCL Credentials section with the ClientID & ClientSecret you generated and click 'Validate'
 
