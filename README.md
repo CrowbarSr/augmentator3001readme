@@ -5,7 +5,7 @@
 How to use this tool using 2 different methods to output your best buff targets within a given EM window.
 
 ## Initial Configuration - you'll only need to do this once
-1. Log into [WarcraftLogs](https://www.warcraftlogs.com/)
+1. Log into [Warcraft Logs](https://www.warcraftlogs.com/)
 
 2. Navigate to [Manage Your Clients](https://www.warcraftlogs.com/api/clients/)
 
@@ -121,7 +121,35 @@ How to use this tool using 2 different methods to output your best buff targets 
 
 1. In WoW type `/mrt` to access the MRT window
 
-2. Blah blah blah
+2. Select 'Note'
+
+3. Select 'Personal Note'
+
+4. Paste the Augmentator3001 note
+
+   <img width="1018" height="546" alt="image" src="https://github.com/user-attachments/assets/36973ba0-e1f9-4cc7-b434-c750e181905b" />
+
+5. Close MRT - it should now work on pull
+
+6. To disable this - simply clear your Personal Note
+
+7. (Optional) Instead of Personal Note, add a draft note
+
+   <img width="241" height="87" alt="image" src="https://github.com/user-attachments/assets/686141e8-3ad6-4003-9d26-f8cc05d8a30e" />
+
+8. Select the appropriate boss
+
+   <img width="711" height="261" alt="image" src="https://github.com/user-attachments/assets/c5a0b561-bf56-4920-a5b1-fbba0e5b08c8" />
+
+9. Paste the Augmentator3001 note here instead
+
+10. When you're ready to pull a boss, either select 'Set as Personal Note'
+
+    <img width="235" height="52" alt="image" src="https://github.com/user-attachments/assets/556779ee-f1e0-4eef-82f8-313067ef86b2" />
+
+    or set your MRT Notes to autoload per boss in Settings
+
+    <img width="369" height="97" alt="image" src="https://github.com/user-attachments/assets/ef03f422-3bc0-46db-b057-7a64f04362c6" />
 
 ## Advanced Usage - Custom EM Timings
 
@@ -129,5 +157,23 @@ TO BE COMPLETED
 
 ## FAQs
 
-TO BE COMPLETED
+**Do I need the note visible during the boss fight for the Weakaura to work?**
+- You don't need your MRT note visible for the Weakaura to function. You can disable the note to hide it
+
+  <img width="323" height="62" alt="image" src="https://github.com/user-attachments/assets/39a0240b-275a-4245-b341-50be655712f1" />
+
+**My raid group has many players with alt-chars in their name, how can I import them easily?**
+- You can add a custom log containing those players, import the DPS characters from it and then delete the log
+
+**How can I change the colour of the Prescience frame glow?**
+- Search for `local color =` in the Weakaura code and adjust it to your preference
+- The format is `{R, G, B, Alpha}`
+- Blue would be `local color = {0, 0.3, 1, 1}`
+- Green would be `local color = {0, 1, 0, 1}`
+
+**My logs or best pulls aren't being populated, what is wrong?**
+
+- Ensure you have selected the correct boss encounter
+- Ensure your logs aren't private
+- You might be limited by the Warcraft Logs API, check at the bottom of the [Warcraftlogs settings page](https://www.warcraftlogs.com/profile)
 
