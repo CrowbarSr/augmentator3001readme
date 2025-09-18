@@ -2,7 +2,9 @@
 
 [LINK TO THE TOOL](https://augmentator3001-production.up.railway.app/)
 
-How to use this tool using 2 different methods to output your best buff targets within a given EM window.
+How to use this tool using 2 different methods to output your best buff targets within a given EM window. 
+
+This tool was originally created by [Liroo](https://github.com/Liroo) and I have picked it up.
 
 ## Initial Configuration - you'll only need to do this once
 1. Log into [Warcraft Logs](https://www.warcraftlogs.com/)
@@ -178,4 +180,7 @@ TO BE COMPLETED
 - Ensure you have selected the correct boss encounter
 - Ensure your logs aren't private
 - You might be limited by the Warcraft Logs API, check at the bottom of the [Warcraftlogs settings page](https://www.warcraftlogs.com/profile)
+
+**Can you support private logs?**
+- I don't know but I don't think so
 
