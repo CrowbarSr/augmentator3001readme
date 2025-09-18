@@ -1,4 +1,7 @@
 # Augmentator3001
+
+[LINK TO THE TOOL](https://augmentator3001-production.up.railway.app/)
+
 How to use this tool using 2 different methods to output your best buff targets within a given EM window.
 
 ## Initial Configuration - you'll only need to do this once
