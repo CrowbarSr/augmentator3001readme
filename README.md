@@ -5,21 +5,37 @@
 How to use this tool using 2 different methods to output your best buff targets within a given EM window.
 
 ## Initial Configuration - you'll only need to do this once
-1. Log into [WarcraftLogs](https://www.warcraftlogs.com/api/clients/) and generate an API key
+1. Log into [WarcraftLogs](https://www.warcraftlogs.com/)
+
+2. Navigate to [Manage Your Clients](https://www.warcraftlogs.com/api/clients/)
+
+3. Select 'Create Client'
+
+   <img width="127" height="40" alt="image" src="https://github.com/user-attachments/assets/8749a154-a389-4256-9ef4-6c4a4991a273" />
+
+4. Populate the fields with whatever you want
 
    Example:
 
    <img width="701" height="208" alt="91ae721d-5d4f-4cc3-894a-815378446399" src="https://github.com/user-attachments/assets/24d1960a-69dd-417e-a25b-ee619b06e4d3" />
 
-2. Complete the WCL Credentials section with the ClientID & ClientSecret you generated and click 'Validate'
+5. Note your ClientID & ClientSecret somewhere SAFE
+
+   <img width="986" height="67" alt="image" src="https://github.com/user-attachments/assets/0f50162c-5343-43d3-aea1-93ccc375f3c7" />
+
+6. Complete the WCL Credentials section with the ClientID & ClientSecret you generated and select 'Validate'
 
    <img width="161" height="30" alt="dbf86c82-dcf8-409f-a3cc-fd06f36eec89" src="https://github.com/user-attachments/assets/77bae82e-fd84-4d96-82c6-9d100c25c98d" />
 
-3. Select your region in the top right corner
+7. Select your region in the top right corner
 
-## Basic Usage Method #1 - Custom Logs
+## Select your preferred method
 
-Use this method to analyse your logs and provide a snapshot of your best targets based on the average results of kills and/or pulls. This is effective for a snapshot but less effective if more logs are coalesced over time due to faster kill times, better gear and smarter play.
+<details>
+
+<summary>Basic Usage Method #1 - Custom Logs Snapshot (Recommended for beginners)</summary>
+
+### Use this method to analyse your logs and provide a snapshot of your best targets based on the average results of kills and/or pulls. This is effective for a snapshot but less effective if more logs are coalesced over time due to faster kill times, better gear and smarter play.
 
 1. Expand the Custom Logs section, provide a link to your logs and click 'Add Custom Report'
 
@@ -51,9 +67,13 @@ Use this method to analyse your logs and provide a snapshot of your best targets
 
 9. (Optional) Proceed to the Weakaura Integration section
 
-## Basic Usage Method #2 - Best Logs
+</details>
 
-Use this method to pull each roster member's best overall performance for a particular boss instead of using provided custom logs. This is effective for longer term usage as it will always provide the 'best' data instead of a snapshot from logs.
+<details>
+
+<summary>Basic Usage Method #2 - Best Logs</summary>
+
+### Use this method to pull each roster member's best overall performance for a particular boss instead of using provided custom logs. This is effective for longer term usage as it will always provide the 'best' data instead of a snapshot from logs.
 
 1. Expand the Edit Roster section & populate it with your DPS roster
 
@@ -79,9 +99,35 @@ Use this method to pull each roster member's best overall performance for a part
 
 8. (Optional) Proceed to the Weakaura Integration section
 
-## Weakaura Integration
+</details>
 
-1. Navigate to the Weakaura
+## Weakaura & MRT Integration
+
+### Weakaura
+
+1. Navigate to the [Weakaura](https://wago.io/-0f1A1GEK) page
+
+   :warning: **NOTE: You can ignore the warning, the Weakaura still currently functions**
+
+2. Select 'Copy Import String'
+
+3. In WoW type `/wa` to access your Weakauras
+
+4. Import the Weakaura into WoW using the string from step #2
+
+5. Close the Weakaura window
+
+### MRT
+
+1. In WoW type `/mrt` to access the MRT window
+
+2. Blah blah blah
 
 ## Advanced Usage - Custom EM Timings
+
+TO BE COMPLETED
+
+## FAQs
+
+TO BE COMPLETED
 
