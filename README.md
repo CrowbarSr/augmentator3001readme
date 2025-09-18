@@ -133,7 +133,9 @@ How to use this tool using 2 different methods to output your best buff targets 
 
 6. To disable this - simply clear your Personal Note
 
-7. (Optional) Instead of Personal Note, add a draft note
+**Optional**
+
+7. Instead of Personal Note, add a draft note
 
    <img width="241" height="87" alt="image" src="https://github.com/user-attachments/assets/686141e8-3ad6-4003-9d26-f8cc05d8a30e" />
 
