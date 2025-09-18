@@ -133,7 +133,9 @@ This tool was originally created by [Liroo](https://github.com/Liroo) and I have
 
 5. Close MRT - it should now work on pull
 
-6. To disable this - simply clear your Personal Note
+   [Example video of the frame highlights](https://www.youtube.com/watch?v=de6IcYMpm7Q)
+
+7. To disable this - simply clear your Personal Note
 
 **Optional**
 
