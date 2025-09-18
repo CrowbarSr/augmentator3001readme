@@ -135,17 +135,17 @@ How to use this tool using 2 different methods to output your best buff targets 
 
 **Optional**
 
-7. Instead of Personal Note, add a draft note
+1. Instead of Personal Note, add a draft note
 
    <img width="241" height="87" alt="image" src="https://github.com/user-attachments/assets/686141e8-3ad6-4003-9d26-f8cc05d8a30e" />
 
-8. Select the appropriate boss
+2. Select the appropriate boss
 
    <img width="711" height="261" alt="image" src="https://github.com/user-attachments/assets/c5a0b561-bf56-4920-a5b1-fbba0e5b08c8" />
 
-9. Paste the Augmentator3001 note here instead
+3. Paste the Augmentator3001 note here instead
 
-10. When you're ready to pull a boss, either select 'Set as Personal Note'
+4. When you're ready to pull a boss, either select 'Set as Personal Note'
 
     <img width="235" height="52" alt="image" src="https://github.com/user-attachments/assets/556779ee-f1e0-4eef-82f8-313067ef86b2" />
 
