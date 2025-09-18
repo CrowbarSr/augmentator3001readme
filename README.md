@@ -184,3 +184,6 @@ TO BE COMPLETED
 **Can you support private logs?**
 - I don't know but I don't think so
 
+**Does Xeph eat breakfast?**
+- Originally he was grey parsing but has improved
+
