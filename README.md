@@ -168,6 +168,9 @@ TO BE COMPLETED
 
   <img width="323" height="62" alt="image" src="https://github.com/user-attachments/assets/39a0240b-275a-4245-b341-50be655712f1" />
 
+**Can I hide my personal note while keeping the raid note visible?**
+- Not really, you can put them as separate windows and make the personal note window tiny and hide it in a corner or something
+
 **My raid group has many players with alt-chars in their name, how can I import them easily?**
 - You can add a custom log containing those players, import the DPS characters from it and then delete the log
 
