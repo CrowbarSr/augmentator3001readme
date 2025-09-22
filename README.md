@@ -191,9 +191,6 @@ TO BE COMPLETED
 **Can you support private logs?**
 - I don't know but I don't think so
 
-**Does Xeph eat breakfast?**
-- Originally he was grey parsing on the breakfast boss but has improved
-
 **Can you hide Cell party/raid frames but keep the Spotlight frame?**
 - Apparently, add the following to the Code Snippet section within `/cell options`
 
@@ -229,4 +226,6 @@ TO BE COMPLETED
   Cell:RegisterCallback("UpdatePixelPerfect", "HideIndicator_UpdatePixelPerfect", UpdateIndicatorVisibility)
   ```
 
+**Does Xeph eat breakfast?**
+- Originally he was grey parsing on the breakfast boss but has improved
 
