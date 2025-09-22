@@ -121,17 +121,19 @@ This tool was originally created by [Liroo](https://github.com/Liroo) and I have
 
 ### MRT
 
-1. In WoW type `/mrt` to access the MRT window
+1. Download and install [Method Raid Tools](https://www.curseforge.com/wow/addons/method-raid-tools) addon
+   
+2. In WoW type `/mrt` to access the MRT window
 
-2. Select 'Note'
+3. Select 'Note'
 
-3. Select 'Personal Note'
+4. Select 'Personal Note'
 
-4. Paste the Augmentator3001 note
+5. Paste the Augmentator3001 note
 
    <img width="1018" height="546" alt="image" src="https://github.com/user-attachments/assets/36973ba0-e1f9-4cc7-b434-c750e181905b" />
 
-5. Close MRT - it should now work on pull
+6. Close MRT - it should now work on pull
 
    [Example video of the frame highlights](https://www.youtube.com/watch?v=de6IcYMpm7Q)
 
@@ -190,5 +192,41 @@ TO BE COMPLETED
 - I don't know but I don't think so
 
 **Does Xeph eat breakfast?**
-- Originally he was grey parsing but has improved
+- Originally he was grey parsing on the breakfast boss but has improved
+
+**Can you hide Cell party/raid frames but keep the Spotlight frame?**
+- Apparently, add the following to the Code Snippet section within `/cell options`
+
+  ```
+  --hide cell party frames, keep spotlight only
+  UnregisterAttributeDriver(CellPartyFrame, "state-visibility") CellPartyFrame:Hide() UnregisterAttributeDriver(CellRaidFrame, "state-visibility") CellPartyFrame:Hide()
+  ```
+
+**Can Cell indicators only apply to the spotlight frames?**
+- Yes, add the following to the Code Snippet section within `/cell options` and update the 'Your Indicator Name' to whatever you named your Prescience indicator
+  
+  ```
+  local F = Cell.funcs
+
+  local indicatorName = "Your Indicator Name"
+
+  local function HideIndicator(b)
+     if b._indicatorsReady and not b.isSpotlight then
+        for k,v in pairs(b.indicators) do
+           if v.configs and v.configs.name == indicatorName then
+              b.indicators[k] = nil
+           end
+        end
+     end
+  end
+
+  local function UpdateIndicatorVisibility()
+     F.IterateAllUnitButtons(self, HideIndicator, true, false, true)
+  end
+  
+  -- Hook the function to Cell's events
+  Cell:RegisterCallback("UpdateIndicators", "HideIndicator_UpdateIndicators", UpdateIndicatorVisibility)
+  Cell:RegisterCallback("UpdatePixelPerfect", "HideIndicator_UpdatePixelPerfect", UpdateIndicatorVisibility)
+  ```
+
 
