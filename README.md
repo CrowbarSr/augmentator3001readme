@@ -105,6 +105,8 @@ This tool was originally created by [Liroo](https://github.com/Liroo) and I have
 
 ## Weakaura & MRT Integration
 
+This is only useful if you intend to use the frame highlighting function
+
 ### Weakaura
 
 1. Navigate to the [Weakaura](https://wago.io/-0f1A1GEK) page
