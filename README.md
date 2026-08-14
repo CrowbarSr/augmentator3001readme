@@ -29,7 +29,7 @@ This tool was originally created by [Liroo](https://github.com/Liroo).
 
    <img width="161" height="30" alt="dbf86c82-dcf8-409f-a3cc-fd06f36eec89" src="https://github.com/user-attachments/assets/77bae82e-fd84-4d96-82c6-9d100c25c98d" />
 
-7. Select your region in the top right corner
+7. <b>Select your region in the top right corner</b>
 
 ## Select your preferred method
 
