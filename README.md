@@ -2,9 +2,9 @@
 
 [LINK TO THE TOOL](https://augmentator3001-production.up.railway.app/)
 
-How to use this tool using 2 different methods to output your best buff targets within a given EM window. 
+How to use this tool using 2 different methods to output your best buff targets within a given Prescience window. 
 
-This tool was originally created by [Liroo](https://github.com/Liroo) and I have picked it up.
+This tool was originally created by [Liroo](https://github.com/Liroo).
 
 ## Initial Configuration - you'll only need to do this once
 1. Log into [Warcraft Logs](https://www.warcraftlogs.com/)
@@ -65,10 +65,6 @@ This tool was originally created by [Liroo](https://github.com/Liroo) and I have
 
    <img width="785" height="235" alt="6c2114fd-15ff-4275-bc4f-3df84168072f" src="https://github.com/user-attachments/assets/dad0219c-c00c-46c7-bd89-d9362f4e98d5" />
 
-8. (Optional) You can then export this data using the 'Copy Note' button at the bottom of the page to use with the provided Weakaura
-
-9. (Optional) Proceed to the Weakaura Integration section
-
 </details>
 
 <details>
@@ -97,92 +93,12 @@ This tool was originally created by [Liroo](https://github.com/Liroo) and I have
 
    <img width="784" height="234" alt="cd3ce698-73bf-43d2-9d5d-61a6811accf0" src="https://github.com/user-attachments/assets/0a035187-1055-46a7-9a2a-dca49216ba07" />
 
-7. (Optional) You can then export this data using the 'Copy Note' button at the bottom of the page to use with the provided Weakaura
-
-8. (Optional) Proceed to the Weakaura Integration section
-
 </details>
-
-## Weakaura & MRT Integration
-
-This is only useful if you intend to use the frame highlighting function
-
-### Weakaura
-
-1. Navigate to the [Weakaura](https://wago.io/-0f1A1GEK) page
-
-   :warning: **NOTE: You can ignore the warning, the Weakaura still currently functions**
-
-2. Select 'Copy Import String'
-
-3. In WoW type `/wa` to access your Weakauras
-
-4. Import the Weakaura into WoW using the string from step #2
-
-5. Close the Weakaura window
-
-### MRT
-
-1. Download and install [Method Raid Tools](https://www.curseforge.com/wow/addons/method-raid-tools) addon
-   
-2. In WoW type `/mrt` to access the MRT window
-
-3. Select 'Note'
-
-4. Select 'Personal Note'
-
-5. Paste the Augmentator3001 note
-
-   <img width="1018" height="546" alt="image" src="https://github.com/user-attachments/assets/36973ba0-e1f9-4cc7-b434-c750e181905b" />
-
-6. Close MRT - it should now work on pull
-
-   [Example video of the frame highlights](https://www.youtube.com/watch?v=de6IcYMpm7Q)
-
-7. To disable this - simply clear your Personal Note
-
-**Optional**
-
-1. Instead of Personal Note, add a draft note
-
-   <img width="241" height="87" alt="image" src="https://github.com/user-attachments/assets/686141e8-3ad6-4003-9d26-f8cc05d8a30e" />
-
-2. Select the appropriate boss
-
-   <img width="711" height="261" alt="image" src="https://github.com/user-attachments/assets/c5a0b561-bf56-4920-a5b1-fbba0e5b08c8" />
-
-3. Paste the Augmentator3001 note here instead
-
-4. When you're ready to pull a boss, either select 'Set as Personal Note'
-
-    <img width="235" height="52" alt="image" src="https://github.com/user-attachments/assets/556779ee-f1e0-4eef-82f8-313067ef86b2" />
-
-    or set your MRT Notes to autoload per boss in Settings
-
-    <img width="369" height="97" alt="image" src="https://github.com/user-attachments/assets/ef03f422-3bc0-46db-b057-7a64f04362c6" />
-
-## Advanced Usage - Custom EM Timings
-
-TO BE COMPLETED
 
 ## FAQs
 
-**Do I need the note visible during the boss fight for the Weakaura to work?**
-- You don't need your MRT note visible for the Weakaura to function. You can disable the note to hide it
-
-  <img width="323" height="62" alt="image" src="https://github.com/user-attachments/assets/39a0240b-275a-4245-b341-50be655712f1" />
-
-**Can I hide my personal note while keeping the raid note visible?**
-- Not really, you can put them as separate windows and make the personal note window tiny and hide it in a corner or something
-
 **My raid group has many players with alt-chars in their name, how can I import them easily?**
 - You can add a custom log containing those players, import the DPS characters from it and then delete the log
-
-**How can I change the colour of the Prescience frame glow?**
-- Search for `local color =` in the Weakaura code and adjust it to your preference
-- The format is `{R, G, B, Alpha}`
-- Blue would be `local color = {0, 0.3, 1, 1}`
-- Green would be `local color = {0, 1, 0, 1}`
 
 **My logs or best pulls aren't being populated, what is wrong?**
 
@@ -191,43 +107,4 @@ TO BE COMPLETED
 - You might be limited by the Warcraft Logs API, check at the bottom of the [Warcraftlogs settings page](https://www.warcraftlogs.com/profile)
 
 **Can you support private logs?**
-- I don't know but I don't think so
-
-**Can you hide Cell party/raid frames but keep the Spotlight frame?**
-- Apparently, add the following to the Code Snippet section within `/cell options`
-
-  ```
-  --hide cell party frames, keep spotlight only
-  UnregisterAttributeDriver(CellPartyFrame, "state-visibility") CellPartyFrame:Hide() UnregisterAttributeDriver(CellRaidFrame, "state-visibility") CellPartyFrame:Hide()
-  ```
-
-**Can Cell indicators only apply to the spotlight frames?**
-- Yes, add the following to the Code Snippet section within `/cell options` and update the 'Your Indicator Name' to whatever you named your Prescience indicator
-  
-  ```
-  local F = Cell.funcs
-
-  local indicatorName = "Your Indicator Name"
-
-  local function HideIndicator(b)
-     if b._indicatorsReady and not b.isSpotlight then
-        for k,v in pairs(b.indicators) do
-           if v.configs and v.configs.name == indicatorName then
-              b.indicators[k] = nil
-           end
-        end
-     end
-  end
-
-  local function UpdateIndicatorVisibility()
-     F.IterateAllUnitButtons(self, HideIndicator, true, false, true)
-  end
-  
-  -- Hook the function to Cell's events
-  Cell:RegisterCallback("UpdateIndicators", "HideIndicator_UpdateIndicators", UpdateIndicatorVisibility)
-  Cell:RegisterCallback("UpdatePixelPerfect", "HideIndicator_UpdatePixelPerfect", UpdateIndicatorVisibility)
-  ```
-
-**Does Xeph eat breakfast?**
-- Originally he was grey parsing on the breakfast boss but has improved
-
+- I don't think so
